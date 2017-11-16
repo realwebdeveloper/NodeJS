@@ -45,7 +45,7 @@ exports.handleRequest = function(request, response) {
 exports.handleRequest = function (request, response) {
     const { headers, method, url } = request;
     switch (url) {
-        case /:
+        case "/":
             
             break;
     

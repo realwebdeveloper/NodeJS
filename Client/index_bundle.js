@@ -7766,7 +7766,7 @@ var Main = function (_React$Component) {
                 }
             });
 
-            xhr.open("GET", "http://localhost:8080/" + variable);
+            xhr.open("GET", "http://localhost:8080/api/" + variable);
             xhr.send(data);
         };
 

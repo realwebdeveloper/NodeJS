@@ -10,7 +10,7 @@ exports.handleRequest = function(request, response) {
             if (url === '/age') response.end('18');
             else {
                 if (url === "/") {
-                    fs.readFile('./public/index.html', function (error, pageRes) {
+                    fs.readFile('../Client/index.html', function (error, pageRes) {
                         if (error) {
                             response.writeHead(404);
                             response.write('Contents you are looking are Not Found');
@@ -24,7 +24,7 @@ exports.handleRequest = function(request, response) {
                 }
                 else {
                     if (url === "/index_bundle.js") {
-                        fs.readFile('./public/index_bundle.js', function (error, pageRes) {
+                        fs.readFile('../Client/index_bundle.js', function (error, pageRes) {
                             if (error) {
                                 response.writeHead(404);
                                 response.write('Contents you are looking are Not Found');
@@ -42,7 +42,7 @@ exports.handleRequest = function(request, response) {
     }
 }
 
-exports.handleRequest = function (request, response) {
+exports.handleRequest1 = function (request, response) {
     const { headers, method, url } = request;
     switch (url) {
         case "/":

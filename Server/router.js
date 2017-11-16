@@ -13,23 +13,6 @@ exports.handleRequest = function (request, response) {
     {
         if (url.substr(0, 4) === "/api") {
             var api_url = url.slice(5);
-            // switch (api_url) {
-            //     case "name":
-            //         response.writeHead(200, { 'Content-Type': 'text/plain' });
-            //         response.write('Huy');
-            //         response.end();
-            //         break;
-            //     case "age":               
-            //         response.writeHead(200, { 'Content-Type': 'text/plain' });
-            //         response.write('18');
-            //         response.end();
-            //         break;
-            //     default:               
-            //         response.writeHead(404);
-            //         response.write('Contents you are looking are Not Found');
-            //         response.end();
-            //         break;
-            // }
             if (api_url in data){
                 response.writeHead(200, { 'Content-Type': 'text/plain' });
                 response.write(data[api_url]);
